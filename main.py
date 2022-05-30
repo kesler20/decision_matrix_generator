@@ -69,11 +69,22 @@ class DecisionMatrix(object):
 
 
 # make sure that the number of criteria is = to the number of lists in data
-criteria = ['cost (£)', 'duration (hr)']
+criteria = ['1/cost (1/£)']
 # make sure that the number of options is equal to the number of items in the list
-options = ['Venn', 'Diagram', 'Bugatti']
-data = [[100, 10, 3], [200, 20, 6]]
+options = ['Increase PST D to 28[m]', 'Build 2 mote PSTs',]
+data = [[1/199677,1/256800]]
 filename = 'Decision Matrix'
 decision_matrix = DecisionMatrix(criteria, options, data)
-filetype = 'html'
+filetype = 'csv'
+decision_matrix.create_table(filename, filetype)
+
+
+# make sure that the number of criteria is = to the number of lists in data
+criteria = ['1/cost (1/£)','surface area (1/m^2)']
+# make sure that the number of options is equal to the number of items in the list
+options = ['Increase ASP Depth to 8[m]', 'Build 2 more ASPs',]
+data = [[1/1082958,1/691731],[1/2,1/7892]]
+filename = 'Decision Matrix'
+decision_matrix = DecisionMatrix(criteria, options, data)
+filetype = 'csv'
 decision_matrix.create_table(filename, filetype)
