@@ -14,8 +14,8 @@ The table is a pandas DataFrame which can be stored as HTML or excel
 where the $ c_{ij}$ values are calculated by normalising the initial input data 
 with each respective total row sum:
 
-$                                       c_{11} = \frac{v_{ij}}{\sum(v_{ij})_j} $
+$c_{11} = \frac{v_{ij}}{\sum(v_{ij})_j}$
 
 whereas the total socres are the sum of each normalised score of each option
 
-$                                       C_1 = \frac{c_{ij}}{\sum(c_{ij})_j} $
+$C_1 = \frac{c_{ij}}{\sum(c_{ij})_j}$
